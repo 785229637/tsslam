@@ -31,10 +31,10 @@ pip install -r requirements.txt
 ```
 
 ## Datasets Download
-- TUM Dataset: [https://vision.in.tum.de/rgbd/dataset/](https://vision.in.tum.de/rgbd/dataset/)
-- ETH3D SLAM Dataset: [https://www.eth3d.net/slam_datasets](https://www.eth3d.net/slam_datasets)
-- Processed scnnnet Dataset: [https://pan.baidu.com/s/1g_6SBzuCodKoRZe42vUyhw?pwd=ppph](https://pan.baidu.com/s/1g_6SBzuCodKoRZe42vUyhw?pwd=ppph)
-- Self-collected Dataset by Our Robot: [https://pan.baidu.com/s/1pX-Y3ckebDC8UsTVUqPpBw?pwd=23g9](https://pan.baidu.com/s/1pX-Y3ckebDC8UsTVUqPpBw?pwd=23g9)
+- TUM Dataset: [download](https://vision.in.tum.de/rgbd/dataset/)
+- ETH3D SLAM Dataset: [download](https://www.eth3d.net/slam_datasets)
+- Processed scnnnet Dataset: [download](https://pan.baidu.com/s/1g_6SBzuCodKoRZe42vUyhw?pwd=ppph)
+- Self-collected Dataset by Our Robot: [download](https://pan.baidu.com/s/1pX-Y3ckebDC8UsTVUqPpBw?pwd=23g9)
 
 ## Training
 ```bash
@@ -54,7 +54,7 @@ python slam.py --config configs/mono/tum/fr3_office.yaml
 
 ## Acknowledgements
 This project is built upon and references the following open-source repositories:
-- [https://github.com/xingyoujun/transplat](https://github.com/xingyoujun/transplat)
-- [https://github.com/muskie82/MonoGS](https://github.com/muskie82/MonoGS)
-- [https://github.com/DepthAnything/Depth-Anything-V2](https://github.com/DepthAnything/Depth-Anything-V2)
+- [transplat](https://github.com/xingyoujun/transplat)
+- [MonoGS](https://github.com/muskie82/MonoGS)
+- [Depth-Anything-V2](https://github.com/DepthAnything/Depth-Anything-V2)
 
