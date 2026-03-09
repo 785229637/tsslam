@@ -1,0 +1,28 @@
+name: "tum_rgbd"
+
+defaults:
+  - view_sampler: bounded
+
+roots: 
+  - data/TUM_RGBD
+image_size: [480, 640]
+image_shape: [256, 256]
+baseline_epsilon: 0.01
+max_fov: 90.0
+make_baseline_1: true
+augment: false
+test_len: 100
+test_chunk_interval: 1
+test_times_per_scene: 1
+skip_bad_shape: true
+near: 0.1
+far: 10.0
+baseline_scale_bounds: true
+shuffle_val: false
+max_time_diff: 0.02
+
+
+background_color: [0.0, 0.0, 0.0]
+cameras_are_circular: false
+
+

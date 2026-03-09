@@ -1,0 +1,41 @@
+# @package _global_
+
+defaults:
+  - override /dataset: replica
+  - override /model/encoder: trans
+  - override /loss: [mse,pose]
+  # - override /loss: [pose]
+
+wandb:
+  name: replica
+  tags: [replica, 256x256]
+
+data_loader:
+  train:
+    batch_size: 1
+
+trainer:
+  max_steps: 200000
+
+model:
+  encoder:
+    num_depth_candidates: 128
+    costvolume_unet_feat_dim: 128
+    costvolume_unet_channel_mult: [1,1,1] 
+    costvolume_unet_attn_res: [4]
+    gaussians_per_pixel: 1
+    depth_unet_feat_dim: 32
+    depth_unet_attn_res: [16]
+    depth_unet_channel_mult: [1,1,1,1,1]
+
+dataset:
+  image_shape: [256, 256]
+  roots: [/home/ben/3dgsslam/splat-depth/SplaTam_v1/data/Replica]
+  near: 1
+  far: 100.0
+  baseline_scale_bounds: true
+  make_baseline_1: true
+
+test:
+  eval_time_skip_steps: 5
+  compute_scores: true
