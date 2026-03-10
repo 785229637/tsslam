@@ -1232,8 +1232,7 @@ class FrontEnd(mp.Process):
 
 
                 curr_frame = self.cameras[cur_frame_idx]
-                # blur_check = is_image_blurry(curr_frame.original_image,100)
-                blur_check = False
+                blur_check = is_image_blurry(curr_frame.original_image,100)
 
                 create_kf = self.is_keyframe(
                     cur_frame_idx,
