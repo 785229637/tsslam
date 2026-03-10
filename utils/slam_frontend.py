@@ -639,8 +639,8 @@ class FrontEnd(mp.Process):
             for cam in cams:
 
                 w2c = torch.eye(4, device=device)
-                w2c[:3, :3] = cam.R_gt.T
-                w2c[:3, 3] = -cam.R_gt.T @ cam.T_gt
+                w2c[:3, :3] = cam.R.T
+                w2c[:3, 3] = -cam.R.T @ cam.T
                 # w2c[:3, :3] = cam.R
                 # w2c[:3, 3] = cam.T
                 # w2c[:3, 3] = w2c[:3, 3] * 0.1
